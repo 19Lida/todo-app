@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,89 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+ body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.input-wrapper {
+  margin-bottom: 20px;
+}
+.task-input {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add-btn {
+  padding: 8px 12px;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: #0099cc;
+}
+.task-list {
+   width: 420px;     
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.task-list-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #5d88b4;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+ 
+}
+ .task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;             
+} 
+ .task-text {
+  text-align: left;
+  word-break: break-word; 
+} 
+.task-text.completed {
+  text-decoration: line-through;
+  color: #324da8;
+} 
+ .task-checkbox {
+  width: 18px;
+  height: 18px;
+} 
+.delete-btn {
+  background: red;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
 }
